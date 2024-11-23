@@ -24,7 +24,7 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 24, 23, 23),
+      backgroundColor: const Color.fromARGB(255, 24, 22, 23),
       body: Column(
         children: [
           SizedBox(
