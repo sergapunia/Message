@@ -11,55 +11,57 @@ class Editinganaccount extends StatefulWidget {
 class _EditinganaccountState extends State<Editinganaccount> {
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Table(),
-        Container(
-          width: 500,
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(20),
-            color: const Color.fromARGB(255, 31, 31, 31),
-          ),
-          padding: EdgeInsets.all(10),
-          margin: EdgeInsets.all(5),
-          child: Column(
-            children: [
-              Container(
-                padding: EdgeInsets.all(20),
-                decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(10),
-                    color: const Color.fromARGB(255, 107, 107, 107)),
-                child: Column(
-                  children: [
-                    Avatars(),
-                    SizedBox(
-                      height: 20,
-                    ),
-                    Container(
-                      width: 100,
-                      decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(20),
-                          color: Colors.black),
-                      child: IconButton(
-                        onPressed: () {},
-                        icon: Icon(
-                          Icons.crop_original_rounded,
-                          color: const Color.fromARGB(255, 255, 255, 255),
+    return Scaffold(
+      body: Column(
+        children: [
+          Table(),
+          Container(
+            width: 500,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(20),
+              color: const Color.fromARGB(255, 31, 31, 31),
+            ),
+            padding: EdgeInsets.all(10),
+            margin: EdgeInsets.all(5),
+            child: Column(
+              children: [
+                Container(
+                  padding: EdgeInsets.all(20),
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      color: const Color.fromARGB(255, 107, 107, 107)),
+                  child: Column(
+                    children: [
+                      Avatars(),
+                      SizedBox(
+                        height: 20,
+                      ),
+                      Container(
+                        width: 100,
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(20),
+                            color: Colors.black),
+                        child: IconButton(
+                          onPressed: () {},
+                          icon: Icon(
+                            Icons.crop_original_rounded,
+                            color: const Color.fromARGB(255, 255, 255, 255),
+                          ),
                         ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
-              ),
-              SizedBox(
-                height: 50,
-              ),
-            ],
+                SizedBox(
+                  height: 50,
+                ),
+              ],
+            ),
           ),
-        ),
-        Spacer(),
-        UserName(),
-      ],
+          Spacer(),
+          UserName(),
+        ],
+      ),
     );
   }
 
